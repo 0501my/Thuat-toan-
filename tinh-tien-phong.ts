@@ -1,7 +1,7 @@
-function matrixElementsSum(matrix) {
-    let sum = 0;
-    matrix[0].forEach(element => {
-        sum += element;
+function matrixElementsSum(matrix : number[][]):number {
+    let sum : number = 0;
+    matrix[0].forEach(value => {
+        sum += value;
     });
     for (let i = 1; i < matrix.length; i++) {
         for (let j = 0; j < matrix[i].length; j++) {

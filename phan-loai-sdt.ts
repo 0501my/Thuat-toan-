@@ -1,5 +1,5 @@
 function classifyPhoneNumber(phoneNumber: string[]) {
-    let Viettel: string[] = [];
+    let Vietet: string[] = [];
     let Mobifone: string[] = [];
     let Vinaphone: string[] = [];
 
@@ -17,7 +17,7 @@ function classifyPhoneNumber(phoneNumber: string[]) {
             case '037':
             case '038':
             case '039':
-                Viettel.push(phoneNumber[i]);
+                Vietet.push(phoneNumber[i]);
                 break;
         }
         switch (phoneNumber[i].substring(0, 3)) {
@@ -45,9 +45,9 @@ function classifyPhoneNumber(phoneNumber: string[]) {
                 break;
         }
     }
-    console.log(`Số điên thoại Viettel: ${Viettel}`);
-    console.log(`Số điên thoại Vinaphone: ${Vinaphone}`);
-    console.log(`Số điên thoại Mobifone: ${Mobifone}`);
+    console.log(`Số điện thoại Viettel là : ${Vietet}`);
+    console.log(`Số điện thoại Vinaphone là : ${Vinaphone}`);
+    console.log(`Số điện thoại Mobifone là : ${Mobifone}`);
 
 }
 
